@@ -1,1 +1,0 @@
-This file is just put in place because GitHub won't create an empty folder. This file can be deleted.
