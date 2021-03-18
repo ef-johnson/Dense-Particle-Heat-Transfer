@@ -26,7 +26,7 @@ E) A meshing program is needed which can make 2D surface meshes with triangular 
 
 To run a simulation, the steps are given below. Much more detail is given in the thesis. 
 
-1) Draw the geometry of the walls containing the particles using a CAD program.olidWorks, Onshape, etc
+1) Draw the geometry of the walls containing the particles using a CAD program.
 2) Mesh the geometry with triangular elements (using a program such as Gmsh) and save the mesh in STL file format in the "mesh" folder.
 3) Read the STL file in to ParaView, where three text files must be created and saved in the "mesh" folder: A)  vertices.txt, which contains the coordinates of the points of the triangles, B) centers.txt, which contains the center coordinates of the triangles, and C) relations.txt, which gives the relationship between the element IDs and the vertex IDs.
 5) The DEM simulation is run using LIGGGHTS, from within the "DEM" folder. This requires opening a terminal and issuing a command such as "mpirun -np 20 ~/LIGGGHTS/LIGGGHTS-PUBLIC/src/lmp_auto < in.fill_lattice" (assuming LIGGGHTS has been downloaded and the executable "lmp_auto" has been created. (Note that one change should be made before compiling LIGGGHTS: the output ("dump") files should have their header lines removed for simplest use - see thesis.)
