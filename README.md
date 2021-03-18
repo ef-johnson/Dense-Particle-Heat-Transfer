@@ -4,6 +4,7 @@ This code calculates heat transfer through groups of small, sand-like particles,
 DPHT is a heat transfer code for large groups of small spherical particles, which are either in dense granular flows or static. It is based on the Discrete Element Method (DEM). The particle collision mechanics are first simulated with DEM, and the particle xyz positions are written to text files over time. After the DEM simulation is finished, this DPHT code reads each of these xyz position files and calculates the heat transfer between the particles, as well as between particles and the walls. This can be considered a one-way coupling to DEM. 
 
 DPHT was developed for modeling solid particle solar receivers and heat exchangers in the field of concentrating solar power, but it is applicable for many situations having packed or moving particle beds. The heat transfer calculations are based on work from previously published research, which is explained in the thesis:
+
 Advances in Modeling High Temperature Particle Flows in the Field of Concentrating Solar Power, Evan F. Johnson, Middle East Technical University, 2021. 
 Chapter 5 of the thesis contains the background, assumptions, model details, and an example. The code for the same example is included in this GitHub repository.  
 
