@@ -1,0 +1,2 @@
+This file is just put in place because GitHub doesn't create a folder if there is nothing inside.
+The results_to_save folder is just used to save results, by manually copying any results needed in the future. The contents of the "post" folder is deleted before each run.  
