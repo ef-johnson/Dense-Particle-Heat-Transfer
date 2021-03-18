@@ -1,7 +1,7 @@
 # Dense-Particle-Heat-Transfer
-Calculates heat transfer through groups of small, flowing, sand-like particles.  
+This code calculates heat transfer through groups of small, sand-like particles, in dense granular flows. It was developed for particle heat exchangers and solid particle solar receivers, but it may also be useful for research on similar topics, such as lime kilns, laser sintering of powder beds, or metallurgical processes. 
 
-DPHT is a heat transfer code for large groups of small spherical particles, which is based on the Discrete Element Method (DEM). The particle collision mechanics are first simulated with DEM, and the particle xyz positions are written to text files over time. After the DEM simulation is finished, this DPHT code reads each of these xyz position files and calculates the heat transfer between the particles, as well as between particles and the walls. 
+DPHT is a heat transfer code for large groups of small spherical particles, which are either static or in dense granular flows. It is based on the Discrete Element Method (DEM). The particle collision mechanics are first simulated with DEM, and the particle xyz positions are written to text files over time. After the DEM simulation is finished, this DPHT code reads each of these xyz position files and calculates the heat transfer between the particles, as well as between particles and the walls. 
 
 DPHT was developed for modeling solid particle solar receivers and heat exchangers in the field of concentrating solar power, but it is applicable for many situations having packed or moving particle beds. The heat transfer calculations are based on work from previously published research, which is explained in the thesis:
 Advances in Modeling High Temperature Particle Flows in the Field of Concentrating Solar Power, Evan F. Johnson, Middle East Technical University, 2021. 
