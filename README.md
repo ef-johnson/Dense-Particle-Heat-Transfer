@@ -11,7 +11,7 @@ Chapter 5 of the thesis contains the background, assumptions, model details, and
 
 It is recommended to work in Ubuntu or a similar Linux-based operating system, so that other related software works easily (especially LIGGGHTS for DEM, and ParaView for visualization).  
 
-**Prerequisites:
+Prerequisites:
 
 A) The DPHT code is written in Julia, which is extremely fast due to its run-time compilation, but coding it is much simpler than working in the other compiled languages like C/C++/Fortran. If you know Matlab or similar languages, Julia is easy to adopt. Julia can be downloaded for free (https://julialang.org/). 
 
@@ -24,7 +24,7 @@ D) Some type of CAD drawing software (such as SolidWorks, or Onshape) is needed 
 E) A meshing program is needed which can make 2D surface meshes with triangular elements, such as Gmsh. 
 
 
-**Running a Simulation
+Running a Simulation
 
 To run a simulation, the steps are given below. Much more detail is given in the thesis. 
 
@@ -44,10 +44,4 @@ The code is my first time writing in Julia, so there are undoubtedly ways to imp
 
 This code was developed as part of the mentioned thesis, but it is now shared so others can use it and build upon it. If you use this code or find the thesis useful for your own work, please cite it. Thanks!
 
-
-
-
-
-
-
-
+Evan
