@@ -15,18 +15,18 @@ Prerequisites:
 
 A) The DPHT code is written in Julia, which is extremely fast due to its run-time compilation, but coding it is much simpler than working in the other compiled languages like C/C++/Fortran. If you know Matlab or similar languages, Julia is easy to adopt. Julia can be downloaded for free (https://julialang.org/). 
 
-B) Before DPHT can be run, it needs a DEM code to solve for the particle positions over time. The open source code LIGGGHTS is recommended (https://www.cfdem.com/media/DEM/docu/Manual.html). Within the "DEM" directory of the DPHT file structure, the LIGGGHTS input file (the "in" file) is stored. When running the DEM simulation, the particle center positions are output in two places: A) The folder "post_positions", where the file format is a simple text file (these files will be read by DPHT), and B)The "post_vtk" folder, which is slightly easier to view in ParaView. 
+B) Before DPHT can be run, it needs a DEM code to solve for the particle positions over time. The open source code LIGGGHTS is recommended (https://www.cfdem.com/media/DEM/docu/Manual.html). Within the "DEM" directory of the DPHT file structure, the LIGGGHTS input file (the "in" file) is stored. When running the DEM simulation, the particle center positions are output in two places: A) the folder "post_positions", where the file format is a simple text file (these files will be read by DPHT), and B) the "post_vtk" folder, which is slightly easier to view in ParaView. 
 
 C) ParaView is needed for visualizing the particle positions, temperatures, etc. It is also used to find the wall element centers and the relations between triangular mesh elements. 
 
-D) Some type of CAD drawing software is needed for constructing the geometry that contains the particles, such as a tube, a heat exchanger surface, etc. 
+D) Some type of CAD drawing software (such as SolidWorks, or Onshape) is needed for constructing the geometry that contains the particles, such as a tube, a heat exchanger surface, etc. 
 
 E) A meshing program is needed which can make 2D surface meshes with triangular elements, such as Gmsh.  
 
 
 To run a simulation, the steps are given below. Much more detail is given in the thesis. 
 
-1) Draw the geometry of the walls containing the particles using a CAD program (SolidWorks, Onshape, etc).
+1) Draw the geometry of the walls containing the particles using a CAD program.olidWorks, Onshape, etc
 2) Mesh the geometry with triangular elements (using a program such as Gmsh) and save the mesh in STL file format in the "mesh" folder.
 3) Read the STL file in to ParaView, where three text files must be created and saved in the "mesh" folder: A)  vertices.txt, which contains the coordinates of the points of the triangles, B) centers.txt, which contains the center coordinates of the triangles, and C) relations.txt, which gives the relationship between the element IDs and the vertex IDs.
 5) The DEM simulation is run using LIGGGHTS, from within the "DEM" folder. This requires opening a terminal and issuing a command such as "mpirun -np 20 ~/LIGGGHTS/LIGGGHTS-PUBLIC/src/lmp_auto < in.fill_lattice" (assuming LIGGGHTS has been downloaded and the executable "lmp_auto" has been created. (Note that one change should be made before compiling LIGGGHTS: the output ("dump") files should have their header lines removed for simplest use - see thesis.)
