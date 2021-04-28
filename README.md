@@ -7,7 +7,7 @@ DPHT is a heat transfer code for large groups of small spherical particles, whic
 
 DPHT was developed for modeling solid particle solar receivers and heat exchangers in the field of concentrating solar power, but it is applicable for many situations having packed or moving particle beds. The heat transfer calculations are based on work from previously published research, which is explained in the thesis:
 
-Advances in Modeling High Temperature Particle Flows in the Field of Concentrating Solar Power, Evan F. Johnson, Middle East Technical University, 2021. 
+Advances in Modeling High Temperature Particle Flows in the Field of Concentrating Solar Power, Evan F. Johnson, PhD Thesis, Middle East Technical University, 2021. https://open.metu.edu.tr/handle/11511/89717
 
 Chapter 5 of the thesis contains the background, assumptions, model details, and an example. The code for the same example is included in this GitHub repository.  
 
